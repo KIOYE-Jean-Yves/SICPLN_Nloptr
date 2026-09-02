@@ -1,0 +1,13 @@
+macth_nloptr_algo_name_with_algo_name_PLN<-function(algo){
+  if(algo=="NLOPT_LD_LBFGS"){algo_PLN<-"LBFGS"}
+  if(algo=="NLOPT_LD_VAR1"){algo_PLN<-"VAR1"}
+  if(algo=="NLOPT_LD_VAR2"){algo_PLN<-"VAR2"}
+  if(algo=="NLOPT_LD_TNEWTON"){algo_PLN<-"TNEWTON"}
+  if(algo=="NLOPT_LD_TNEWTON_RESTART"){algo_PLN<-"TNEWTON_RESTART"}
+  if(algo=="NLOPT_LD_TNEWTON_PRECOND"){algo_PLN<-"TNEWTON_PRECOND"}
+  if(algo=="NLOPT_LD_TNEWTON_PRECOND_RESTART"){algo_PLN<-"TNEWTON_PRECOND_RESTART"}
+  if(algo=="NLOPT_LD_MMA"){algo_PLN<-"MMA"}
+  if(algo=="NLOPT_LD_CCSAQ"){algo_PLN<-"CCSAQ"}
+  else{cat("Choose an algorithm name in : \n ",c("NLOPT_LD_LBFGS","NLOPT_LD_MMA","NLOPT_LD_CCSAQ","NLOPT_LD_VAR1","NLOPT_LD_VAR2","NLOPT_LD_TNEWTON","NLOPT_LD_TNEWTON_RESTART","NLOPT_LD_TNEWTON_PRECOND","NLOPT_LD_TNEWTON_PRECOND_RESTART"))}
+return(algo_PLN)
+}
